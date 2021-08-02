@@ -13,5 +13,6 @@ public class ProductController {
 	 System.out.println();
 	 int a = 0;
 	 int b = 0;
+	 int c = 0;
  }
 }
