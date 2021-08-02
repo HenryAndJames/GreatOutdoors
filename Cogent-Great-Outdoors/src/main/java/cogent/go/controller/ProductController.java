@@ -12,5 +12,6 @@ public class ProductController {
 	 int z=0;
 	 System.out.println();
 	 int a = 0;
+	 int b = 0;
  }
 }
