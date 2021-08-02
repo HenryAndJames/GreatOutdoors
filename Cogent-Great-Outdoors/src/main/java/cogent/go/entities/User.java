@@ -2,6 +2,7 @@ package cogent.go.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.Size;
 
 @Entity
 public class User {
@@ -9,20 +10,29 @@ public class User {
 	@Id
 	private int id;
 	
-	
+	@Size(max = 30)
 	private String firstName;
+	@Size(max = 30)
 	private String lastName;
+	@Size(max = 10)
 	private String phoneNumber;
+	@Size(max = 30)
 	private String email;
+	@Size(max = 30)
 	private String password;
+	@Size(max = 60)
 	private String addressLine1;
+	@Size(max = 60)
 	private String addressLine2;
+	@Size(max = 30)
 	private String state;
 	private int pincode;
+	
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	public User(int id, String firstName, String lastName, String phoneNumber, String email, String password,
 			String addressLine1, String addressLine2, String state, int pincode) {
 		super();
@@ -37,6 +47,7 @@ public class User {
 		this.state = state;
 		this.pincode = pincode;
 	}
+	
 	public int getId() {
 		return id;
 	}
