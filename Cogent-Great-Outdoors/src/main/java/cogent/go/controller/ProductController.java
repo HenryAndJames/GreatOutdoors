@@ -1,8 +1,8 @@
 package cogent.go.controller;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class ProductController {
  int x;
  void test() {
